@@ -1,12 +1,12 @@
-# D3: A Large Dataset for Training LMs to Act Diff-by-Diff
+# D3: A Large Dataset for Training LMs to Act Diff-by-Diff (COLM 2025)
 
+**The full D3 dataset [is available for download on HuggingFace](https://huggingface.co/datasets/upiter/d3)**
 
 D3 is a large dataset for training LMs to iteratively synthesize general-purpose Python source code by generating file diffs.
+
 To construct D3, we filter, augment, and annotate source code from The Stack by sampling synthetic file-diff sequences with a code analysis tool (a linter), and labeling each sample with an instruction using an LLM (Llama 3.1 70B Instruct). 
 
-**The full dataset, and the preparation pipeline to reproduce it, will be fully open-sourced if our paper submission is accepted.**
-
-Here, we provide an implementation of core procedures, experiments, and analyses discussed in the submission.
+In this repository, we provide our code for running the experiments described in the paper.
 
 ```
 prepare_d3/                     # Preparing D3 (note: diff sampling (Phase II-A) is done using pylintseq, https://pypi.org/project/pylintseq/)        
