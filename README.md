@@ -1,4 +1,5 @@
 # D3: A Large Dataset for Training LMs to Act Diff-by-Diff (COLM 2025)
+*Ulyana Piterbarg, Kanishk Gandhi, Lerrel Pinto, Noah Goodman, Rob Fergus*
 
 **The full D3 dataset [is available for download on HuggingFace](https://huggingface.co/datasets/upiter/d3)**
 
