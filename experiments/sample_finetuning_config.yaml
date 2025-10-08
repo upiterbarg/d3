@@ -1,0 +1,33 @@
+seed: 42
+model: "meta-llama/Llama-3.2-1B"
+data_dir: "./path_to_data"
+train_file: "filename.jsonl"
+context_length: 4096
+overwrite_cache: true
+
+wandb:
+  project: "" 
+  entity: ""
+  dir: ""
+
+reduce_loss: "sum"
+training_args:
+  seed: 42
+  output_dir: "./path_to_outputs"
+  per_device_train_batch_size: 4
+  logging_steps: 10
+  gradient_accumulation_steps: 2
+  gradient_checkpointing: true
+  num_train_epochs: 2
+  weight_decay: 0.01
+  warmup_ratio: 0.01
+  lr_scheduler_type: "linear"
+  learning_rate: 0.0001
+  save_strategy: "steps"
+  save_total_limit: 20
+  save_steps: 100
+  push_to_hub: false
+  report_to: "wandb"
+  run_name: ""
+  ddp_find_unused_parameters: false
+  bf16: true
